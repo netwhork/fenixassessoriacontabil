@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fenix Assessoria Contábil - Mais de 20 Anos de Experiência em Sinop</title>
+    <meta name="description"
+        content="Fenix Assessoria Contábil em Sinop com mais de 20 anos de experiência no mercado. Oferecemos serviços completos de contabilidade, fiscal e tributário para sua empresa.">
+    <meta name="keywords"
+        content="contabilidade sinop, escritório contábil sinop, serviços fiscais, tributário, consultoria empresarial">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Fenix Assessoria Contábil - Mais de 20 Anos em Sinop">
+    <meta property="og:description"
+        content="Escritório de contabilidade com mais de 20 anos de experiência em Sinop, especializado em soluções contábeis completas.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": ["Organization", "LocalBusiness"],
+        "name": "Fenix Assessoria Contábil",
+        "description": "Escritório de contabilidade com mais de 20 anos de experiência em Sinop",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Sinop",
+            "addressRegion": "MT",
+            "addressCountry": "BR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -11.8609,
+            "longitude": -55.5025
+        },
+        "url": "https://fenixassessoria.com.br",
+        "telephone": "+55-66-99627220"
+    }
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-blue: #334067;
+            --secondary-blue: #334067;
+            --light-blue: #dbeafe;
+            --white: #ffffff;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-600: #4b5563;
+            --gray-800: #000000;
+            --gold: #ffffff;
+            --shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--gray-800);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header com margem larga */
+        .header-spacer {
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+        }
+
+        /* Logo */
+        .logo {
+            text-align: center;
+            padding: 30px 0;
+            background: var(--white);
+            font-family: 'Merriweather', serif;
+
+        }
+
+        .logo h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            font-family: 'Merriweather', serif;
+
+        }
+
+        .logo p {
+            color: var(--gray-600);
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        /* Menu de navegação centralizado */
+        nav {
+            background: var(--white);
+            padding: 20px 0;
+            border-bottom: 1px solid var(--gray-200);
+            box-shadow: var(--shadow);
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-menu li a {
+            text-decoration: none;
+            color: var(--gray-800);
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-menu li a:hover {
+            color: var(--primary-blue);
+            background: var(--light-blue);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: var(--white);
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><circle cx="200" cy="200" r="100" fill="rgba(255,255,255,0.05)"/><circle cx="800" cy="300" r="150" fill="rgba(255,255,255,0.03)"/><circle cx="400" cy="700" r="80" fill="rgba(255,255,255,0.04)"/></svg>') no-repeat center center;
+            background-size: cover;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            background: var(--gold);
+            color: var(--gray-800);
+            padding: 15px 40px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(241, 241, 241, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(237, 237, 237, 0.6);
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--gray-800);
+            margin-bottom: 20px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--gray-600);
+            margin-bottom: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Services */
+        .services {
+            background: var(--gray-100);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            border: 1px solid var(--gray-200);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--gray-800);
+            font-family: 'Merriweather', serif;
+
+        }
+
+        .service-card p {
+            color: var(--gray-600);
+            line-height: 1.6;
+        }
+
+        /* About */
+        .about-content {
+            display: flex;
+            /* usar flex para centralizar facilmente */
+            flex-direction: column;
+            /* coluna única */
+            align-items: center;
+            /* centraliza horizontalmente */
+            justify-content: center;
+            /* centraliza verticalmente se houver altura */
+            text-align: center;
+            /* centraliza o texto */
+            gap: 30px;
+            /* espaçamento entre elementos */
+        }
+
+        .about-text h3 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--gray-800);
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--gray-600);
+            margin-bottom: 20px;
+        }
+
+        .about-image {
+            text-align: center;
+        }
+
+        .about-placeholder {
+            width: 100%;
+            max-width: 400px;
+            height: 300px;
+            background: linear-gradient(135deg, var(--light-blue) 0%, var(--gray-100) 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: var(--gray-600);
+            border: 2px dashed var(--gray-200);
+        }
+
+        /* Contact */
+        .contact {
+            background: var(--gray-100);
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--gray-800);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid var(--gray-200);
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-button {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 15px 40px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-button:hover {
+            background: var(--secondary-blue);
+            transform: translateY(-2px);
+        }
+
+        /* Maps */
+        .maps-section {
+            padding: 60px 0;
+            background: var(--white);
+            text-align: center;
+        }
+
+        .map-container {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            position: relative;
+        }
+
+        .map-frame {
+            width: 100%;
+            aspect-ratio: 2 / 1;
+            /* largura 2x maior que altura */
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            border: none;
+            overflow: hidden;
+        }
+
+
+        .map-button {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .map-button:hover {
+            background: var(--secondary-blue);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--gray-800);
+            color: var(--white);
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .footer-content p {
+            margin-bottom: 10px;
+        }
+
+        .footer-social {
+            margin-top: 20px;
+        }
+
+        .footer-social a {
+            color: var(--white);
+            font-size: 1.5rem;
+            margin: 0 15px;
+            transition: all 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            color: var(--gold);
+            transform: translateY(-3px);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+                font-family: 'Merriweather', serif;
+
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                font-family: 'Merriweather', serif;
+
+            }
+
+            .contact-form {
+                margin: 0 20px;
+                padding: 30px 20px;
+            }
+
+            .logo h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+                font-family: 'Merriweather', serif;
+
+            }
+
+            .hero {
+                padding: 60px 0;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .service-card {
+                padding: 30px 20px;
+            }
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            /* fixa na tela */
+            bottom: 20px;
+            /* distância da parte inferior */
+            right: 20px;
+            /* distância da lateral direita */
+            background: #25d366;
+            /* verde WhatsApp */
+            color: white;
+            font-size: 2rem;
+            padding: 15px;
+            border-radius: 50%;
+            /* círculo */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            /* sempre acima de outros elementos */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.2);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+
+        .logo-img {
+            max-width: 400px;
+            /* ajusta conforme necessário */
+            height: auto;
+            display: block;
+            margin: 0 auto 15px;
+            /* centraliza e dá espaço abaixo */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Spacer -->
+    <div class="header-spacer"></div>
+
+    
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="logo">
+        <div class="container">
+            <img src="Logo.png" alt="Fenix Assessoria Contábil" class="logo-img">
+            <h1>Fenix Assessoria Contábil</h1>
+            <p>Mais de 20 Anos de Experiência em Sinop</p>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Soluções Contábeis Modernas para sua Empresa</h1>
+                    <p>Oferecemos serviços completos de contabilidade com tecnologia avançada e atendimento
+                        personalizado para impulsionar o crescimento do seu negócio.</p>
+                    <a href="#contato" class="cta-button">
+                        <i class="fas fa-phone"></i> Fale Conosco
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicos" class="services">
+            <div class="container">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <p class="section-subtitle">Oferecemos uma gama completa de serviços contábeis para atender todas as
+                    necessidades da sua empresa</p>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3>Contabilidade Geral</h3>
+                        <p>Escrituração contábil completa, balanços, demonstrações financeiras e toda documentação
+                            necessária para sua empresa.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-receipt"></i>
+                        </div>
+                        <h3>Fiscal e Tributário</h3>
+                        <p>Apuração de impostos, declarações fiscais, planejamento tributário e regularização junto aos
+                            órgãos competentes.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Departamento Pessoal</h3>
+                        <p>Folha de pagamento, admissões, demissões, férias, 13º salário e todas as obrigações
+                            trabalhistas.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Consultoria Empresarial</h3>
+                        <p>Análise financeira, orientação estratégica, planejamento empresarial e consultoria para
+                            crescimento sustentável.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Abertura de Empresas</h3>
+                        <p>Registro de empresas, alterações contratuais, licenças e toda documentação necessária para
+                            regularização.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>Certificação Digital</h3>
+                        <p>Emissão e renovação de certificados digitais A1 e A3 para pessoa física e jurídica com total
+                            segurança.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="sobre" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Sobre a Fenix Assessoria Contábil</h3>
+                        <p>Com mais de duas décadas de experiência no mercado contábil em Sinop, a Fenix Assessoria
+                            Contábil consolidou-se como referência em prestação de serviços contábeis de excelência.
+                            Nossa trajetória é marcada pela confiança conquistada junto aos nossos clientes.</p>
+                        <p>Nossa equipe é formada por profissionais experientes e constantemente atualizados com as
+                            mudanças na legislação. Oferecemos soluções personalizadas que atendem desde pequenas
+                            empresas até organizações de maior porte, sempre priorizando a qualidade e a precisão em
+                            nossos serviços.</p>
+                        <p><strong>Missão:</strong> Proporcionar segurança e tranquilidade empresarial através de
+                            serviços contábeis de qualidade, baseados em nossa vasta experiência de mercado.</p>
+                    </div>
+                    <!--<div class="about-image">
+                        <div class="about-placeholder">
+                            <i class="fas fa-building" style="font-size: 4rem; color: var(--primary-blue);"></i>
+                        </div>-->
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contato" class="contact">
+            <div class="container">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">Estamos prontos para atender sua empresa. Entre em contato via WhatsApp!</p>
+
+                <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+                    <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow);">
+                        <div style="margin-bottom: 30px;">
+                            <i class="fab fa-whatsapp"
+                                style="font-size: 4rem; color: #25d366; ;margin-bottom: 20px; "></i>
+                            <h3 style="color: var(--gray-800); margin-bottom: 15px;">Fale Conosco pelo WhatsApp</h3>
+                            <p style="color: var(--gray-600); margin-bottom: 30px;">Clique no botão abaixo para iniciar
+                                uma conversa conosco</p>
+                        </div>
+                        <a href="https://wa.me/556699627220?text=Olá,%20vim%20pelo%20site,%20gostaria%20de%20conhecer%20mais%20sobre%20a%20empresa"
+                            target="_blank" class="cta-button"
+                            style="background: #25d366; color: white; text-decoration: none;">
+                            <i class="fab fa-whatsapp"></i> Conversar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Maps Section -->
+        <section class="maps-section">
+            <div class="container">
+                <h2 class="section-title">Nossa Localização</h2>
+                <p class="section-subtitle">Visite nosso escritório ou entre em contato conosco</p>
+
+                <div class="map-container">
+                    <iframe class="map-frame"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d880.5!2d-55.5081877!3d-11.856009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93a77f3bab1d56df%3A0xc7bb6c3584995622!2sF%C3%AAnix%20Assessoria%20Cont%C3%A1bil!5e0!3m2!1spt!2sbr!4v1693847291234"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Fenix Assessoria Contábil. Todos os direitos reservados.</p>
+            <p>📍 Sinop, MT | 📞 (66) 99627-2220 | ✉️ lucas.fiscal@fenixcontabilsnp.com.br</p>
+            <!-- Botão flutuante WhatsApp -->
+            <a href="https://wa.me/556699627220?text=Olá,%20vim%20pelo%20site,%20gostaria%20de%20conhecer%20mais%20sobre%20a%20empresa" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling para links âncora
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Função para controlar o formulário foi removida pois agora usamos WhatsApp
+
+        // Animação dos cards de serviço ao entrar na viewport
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.6s ease forwards';
+                }
+            });
+        }, observerOptions);
+
+        // Observar cards de serviço
+        document.querySelectorAll('.service-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        // CSS para animação
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            
+            .service-card {
+                opacity: 0;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+
+</html>
